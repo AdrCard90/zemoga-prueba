@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.banner {
+  align-items: center;
+  background: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+  &__text {
+    font-size: 30px;
+    font-weight: $regular;
+  }
+
+  &__button {
+    background: transparent;
+    border: 2px solid $black;
+    font-size: 20px;
+    padding: 10px 30px;
+
+    &:hover {
+      border: 2px solid $turquoise;
+      color: $turquoise;
+    }
+  }
+
+  @media(max-width: 991px) {
+    &__text {
+      font-size: 22px;
+    }
+
+    &__button {
+      font-size: 18px;
+      padding: 5px 16px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    &__text {
+      font-size: 17px;
+    }
+
+    &__button {
+      font-size: 15px;
+      padding: 5px 16px;
+    }
+  }
+
+  @media(max-width: 575px) {
+    flex-direction: column;
+
+    &__text {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__button {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+}

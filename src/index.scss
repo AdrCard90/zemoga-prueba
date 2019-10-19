@@ -1,14 +1,26 @@
 @import './variables.scss';
 
 body {
-  margin: 0;
   font-family: "Lato", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  margin: 0;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 button, a {
   cursor: pointer;
+}
+
+a{
+  color: $dark-grey;
+
+  &:hover {
+    color: $turquoise;
+  }
 }
