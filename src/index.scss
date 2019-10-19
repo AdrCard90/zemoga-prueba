@@ -17,10 +17,30 @@ button, a {
   cursor: pointer;
 }
 
-a{
+a {
   color: $dark-grey;
 
   &:hover {
     color: $turquoise;
   }
+}
+
+.rotated-180 {
+  transform: rotate(180deg);
+}
+
+.positive {
+  background-color: $turquoise;
+}
+
+.negative {
+  background-color: $mustard;
+}
+
+.opacity-positive {
+  background-color: rgba($turquoise, 0.7);
+}
+
+.opacity-negative {
+  background-color: rgba($mustard, 0.7);
 }
