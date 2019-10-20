@@ -1,9 +1,11 @@
-import React from 'react';
-import './homepage.scss';
+import React from "react";
+import CelebritiesList from "../../components/CelebritiesList/CelebritiesList";
 
 const HomePage = () => {
   return (
-    <h1>HomePage</h1>
+    <>
+      <CelebritiesList />
+    </>
   );
 };
 
