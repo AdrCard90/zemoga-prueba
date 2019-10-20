@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .banner {
   align-items: center;
@@ -24,7 +24,7 @@
     }
   }
 
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     &__text {
       font-size: 22px;
     }
@@ -35,7 +35,7 @@
     }
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     &__text {
       font-size: 17px;
     }
@@ -46,7 +46,7 @@
     }
   }
 
-  @media(max-width: 575px) {
+  @media (max-width: 575px) {
     flex-direction: column;
 
     &__text {

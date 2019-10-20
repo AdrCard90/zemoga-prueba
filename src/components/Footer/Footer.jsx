@@ -1,8 +1,11 @@
-import { faFacebookSquare, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookSquare,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Footer.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
@@ -22,10 +25,21 @@ const Footer = () => {
           </nav>
           <div className="footer__media">
             <p className="footer__text">Follow Us</p>
-            <a href="https://www.facebook.com/Zemoga/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="footer__icon" icon={faFacebookSquare} />
+            <a
+              href="https://www.facebook.com/Zemoga/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="footer__icon"
+                icon={faFacebookSquare}
+              />
             </a>
-            <a href="https://twitter.com/Zemoga" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/Zemoga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon className="footer__icon" icon={faTwitter} />
             </a>
           </div>

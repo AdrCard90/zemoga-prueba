@@ -1,7 +1,7 @@
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from 'react';
-import './MessageBanner.scss';
+import React from "react";
+import "./MessageBanner.scss";
 
 const MessageBanner = () => {
   return (
@@ -12,8 +12,12 @@ const MessageBanner = () => {
             <h3 className="message__subtitle">Speak out. Be heard.</h3>
             <h2 className="message__title">Be counted</h2>
           </div>
-          <p className="message__text">Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It's easy: You share your opinion, we analyze and put the data in a public report.</p>
-          <FontAwesomeIcon icon={faTimes} className="message__close"/>
+          <p className="message__text">
+            Rule of Thumb is a crowd sourced court of public opinion where
+            anyone and everyone can speak out and speak freely. It's easy: You
+            share your opinion, we analyze and put the data in a public report.
+          </p>
+          <FontAwesomeIcon icon={faTimes} className="message__close" />
         </div>
       </div>
     </aside>
