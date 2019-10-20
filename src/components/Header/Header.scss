@@ -50,5 +50,40 @@
     &:hover {
       color: $turquoise;
     }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .menu-mobile {
+      align-items: center;
+      background-color: $dark-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    &__link {
+      font-size: 28px;
+      margin: 0 0 30px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__nav {
+      padding: 20px;
+    }
+
+    .navbar-toggler {
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 20px;
+      margin: 0 0 30px;
+    }
   }
 }

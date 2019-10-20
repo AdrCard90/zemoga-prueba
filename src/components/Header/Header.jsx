@@ -1,4 +1,4 @@
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -17,27 +17,26 @@ const Header = () => {
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-target="#menu"
+              aria-controls="menu"
               aria-expanded="false"
-              aria-label="Toggle navigation"
+              aria-label="Open Menu"
             >
-              <span className="navbar-toggler-icon"></span>
+              <FontAwesomeIcon className="header__icon" icon={faBars} />
             </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <Link to="/past-trials" className="header__link">
-                Past Trials
-              </Link>
-              <Link to="/how-it-works" className="header__link">
-                How It Works
-              </Link>
-              <Link to="/login" className="header__link">
-                Log In / Sign Up
-              </Link>
-              <FontAwesomeIcon className="header__icon" icon={faSearch} />
+            <div className="collapse navbar-collapse" id="menu">
+              <div className="menu-mobile">
+                <Link to="/past-trials" className="header__link">
+                  Past Trials
+                </Link>
+                <Link to="/how-it-works" className="header__link">
+                  How It Works
+                </Link>
+                <Link to="/login" className="header__link">
+                  Log In / Sign Up
+                </Link>
+                <FontAwesomeIcon className="header__icon" icon={faSearch} />
+              </div>
             </div>
           </nav>
         </div>
