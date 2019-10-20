@@ -1,8 +1,9 @@
 @import "../../variables.scss";
 
 .celebrity-box {
-  width: 45%;
+  padding: 0;
   margin-bottom: 40px;
+  width: 45%;
 
   &__information {
     background-color: rgba($dark-grey, 0.5);
@@ -41,8 +42,8 @@
   }
 
   &__wikipedia-link {
-    font-size: 14px;
     color: $white;
+    font-size: 14px;
     text-decoration: underline;
   }
 
@@ -66,5 +67,46 @@
   &__icon {
     color: $white;
     font-size: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 30px;
+    width: 55%;
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__wikipedia-link {
+      font-size: 12px;
+    }
+
+    &__question {
+      font-size: 18px;
+    }
+
+    &__votes {
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    width: 60%;
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__description {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 575px) {
   }
 }
