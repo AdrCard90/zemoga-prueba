@@ -1,6 +1,8 @@
 import React from "react";
 import CelebritiesList from "../../components/CelebritiesList/CelebritiesList";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import HighlightedCelebrity from "../../components/HighlightedCelebrity/HighlightedCelebrity";
 import MessageBanner from "../../components/MessageBanner/MessageBanner";
 import SubmitBanner from "../../components/SubmitBanner/SubmitBanner";
 import "./HomePage.scss";
@@ -8,7 +10,8 @@ import "./HomePage.scss";
 const HomePage = () => {
   return (
     <>
-      <h1>HomePage</h1>
+      <Header />
+      <HighlightedCelebrity />
       <MessageBanner />
       <CelebritiesList />
       <SubmitBanner />
