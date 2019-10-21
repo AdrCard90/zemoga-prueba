@@ -43,6 +43,10 @@ a {
   background-color: $mustard;
 }
 
+.neutral {
+  background: linear-gradient(to right, $mustard, $turquoise);
+}
+
 .opacity-positive {
   background-color: rgba($turquoise, 0.7);
 }
