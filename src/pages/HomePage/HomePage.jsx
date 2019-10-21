@@ -5,7 +5,6 @@ import Header from "../../components/Header/Header";
 import HighlightedCelebrity from "../../components/HighlightedCelebrity/HighlightedCelebrity";
 import MessageBanner from "../../components/MessageBanner/MessageBanner";
 import SubmitBanner from "../../components/SubmitBanner/SubmitBanner";
-import "./HomePage.scss";
 
 const HomePage = () => {
   return (
