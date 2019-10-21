@@ -1,23 +1,27 @@
-import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import './App.scss';
-import HomePage from './pages/homepage/homepage';
-import PastTrialsPage from './pages/past-trails/past-trials';
-import HowItWorksPage from './pages/how-it-works/how-it-works';
-import LoginPage from './pages/login/login';
-import TermsAndConditionsPage from './pages/terms-and-conditions/terms-and-conditions';
-import PrivacyPolicyPage from './pages/privacy-policy/privacy-policy';
-import ContacUsPage from './pages/contact-us/contact-us';
+import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import AddCelebrity from "./pages/AddCelebrity/AddCelebrity";
+import ContacUsPage from "./pages/ContactUs/ContactUs";
+import HomePage from "./pages/HomePage/HomePage";
+import HowItWorksPage from "./pages/HowItWorks/HowItWorks";
+import LoginPage from "./pages/Login/Login";
+import PastTrialsPage from "./pages/PastTrials/PastTrials";
+import PrivacyPolicyPage from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditionsPage from "./pages/TermsAndConditions/TermsAndConditions";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/past-trials" component={PastTrialsPage} />
         <Route path="/how-it-works" component={HowItWorksPage} />
         <Route path="/login" component={LoginPage} />
-        <Route path="/terms-and-conditions" component={TermsAndConditionsPage} />
+        <Route path="/add-celebrity" component={AddCelebrity} />
+        <Route
+          path="/terms-and-conditions"
+          component={TermsAndConditionsPage}
+        />
         <Route path="/privacy-policy" component={PrivacyPolicyPage} />
         <Route path="/contact-us" component={ContacUsPage} />
         <Redirect to="/" />

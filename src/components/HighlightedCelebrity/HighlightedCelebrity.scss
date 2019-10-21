@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.highlighted {
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 53.711vw;
+  padding: 0;
+
+  &__days {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    width: 100%;
+
+    strong {
+      margin-right: 3px;
+    }
+  }
+
+  &__days-title {
+    align-items: center;
+    background-color: rgba($black, 0.2);
+    color: $white;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+  }
+
+  &__days-text {
+    align-items: center;
+    background-color: rgba($white, 0.5);
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+  }
+
+  &__closing-text {
+    font-size: 13px;
+    font-weight: $regular;
+  }
+
+  &__closing-days {
+    font-size: 36px;
+  }
+
+  @media (max-width: 1023px) {
+    min-height: 550px;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 450px;
+  }
+
+  @media (max-width: 575px) {
+    background-position-x: 70%;
+    min-height: 750px;
+  }
+}

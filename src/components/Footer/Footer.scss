@@ -1,0 +1,66 @@
+@import "../../variables.scss";
+
+.footer {
+  align-items: center;
+  border-top: 1px dotted $black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px 0;
+
+  &__menu {
+    color: $dark-grey;
+    display: flex;
+  }
+
+  &__menu-item {
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__media {
+    align-items: center;
+    display: flex;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: $light;
+  }
+
+  &__icon {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+
+    &__menu {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__menu-item {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    &__media {
+      margin-top: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__icon {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../variables.scss";
+
+.header {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  &__nav {
+    background-color: transparent;
+    padding: 15px 0;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-toggler {
+    margin-right: 30px;
+  }
+
+  &__logo {
+    color: $white;
+    font-size: 32px;
+    font-weight: $regular;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  &__link {
+    color: $white;
+    font-size: 16px;
+    font-weight: $light;
+    margin-right: 50px;
+    text-shadow: 1px 1px 1px black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    color: $white;
+    cursor: pointer;
+    font-size: 25px;
+
+    &:hover {
+      color: $turquoise;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .menu-mobile {
+      align-items: center;
+      background-color: $dark-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    &__link {
+      font-size: 28px;
+      margin: 0 0 30px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__nav {
+      padding: 20px;
+    }
+
+    .navbar-toggler {
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 20px;
+      margin: 0 0 30px;
+    }
+  }
+}
