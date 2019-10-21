@@ -127,9 +127,10 @@ const CelebrityBox = ({
             <div
               className="celebrity__percentages-bar positive bar-positive opacity-positive"
               style={{
-                width: `${Math.round(
-                  (votes.positive * 100) / (votes.positive + votes.negative)
-                )}%`
+                width: `${(
+                  (votes.positive * 100) /
+                  (votes.positive + votes.negative)
+                ).toFixed(1)}%`
               }}
             >
               <FontAwesomeIcon
@@ -137,17 +138,19 @@ const CelebrityBox = ({
                 icon={faThumbsUp}
               />
               <span className="celebrity__percentages-percentage">
-                {Math.round(
-                  (votes.positive * 100) / (votes.positive + votes.negative)
-                )}
+                {(
+                  (votes.positive * 100) /
+                  (votes.positive + votes.negative)
+                ).toFixed(1)}
                 %
               </span>
             </div>
             <div className="celebrity__percentages-bar negative bar-negative opacity-negative">
               <span className="celebrity__percentages-percentage">
-                {Math.round(
-                  (votes.negative * 100) / (votes.positive + votes.negative)
-                )}
+                {(
+                  (votes.negative * 100) /
+                  (votes.positive + votes.negative)
+                ).toFixed(1)}
                 %
               </span>
               <FontAwesomeIcon
