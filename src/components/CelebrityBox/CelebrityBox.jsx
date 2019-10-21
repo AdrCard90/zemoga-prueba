@@ -24,13 +24,24 @@ const CelebrityBox = ({
   const [voted, setVoted] = useState(false);
 
   useEffect(() => {
-    setVotes({ positive: positiveVotes, negative: negativeVotes });
-  }, [positiveVotes, negativeVotes]);
+    if (localStorage.getItem(`votes-celebrity-${id}`)) {
+      setVotes(JSON.parse(localStorage.getItem(`votes-celebrity-${id}`)));
+    } else {
+      const initialVotes = { positive: positiveVotes, negative: negativeVotes };
+      setVotes(initialVotes);
+      localStorage.setItem(
+        `votes-celebrity-${id}`,
+        JSON.stringify(initialVotes)
+      );
+    }
+  }, [id, positiveVotes, negativeVotes]);
+
+  useEffect(() => {
+    localStorage.setItem(`votes-celebrity-${id}`, JSON.stringify(votes));
+  }, [id, votes]);
 
   return (
     <div className="col-12 col-sm-6 box">
-      <h1>{votes.positive}</h1>
-      <h1>{votes.negative}</h1>
       <div className="celebrity">
         <img
           src={require(`../../assets/images/${photo}`)}
